@@ -1,0 +1,38 @@
+/* src/app/globals.css */
+
+body {
+  margin: 0; /* Removing the 8px margin makes "full width" sections easier to build */
+  padding: 0;
+  
+  /* This stack covers Mac, Windows, Linux, and Android with their best native fonts */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  color: #212529; /* Modern dark grey is easier on the eyes than pure black */
+}
+
+/* Custom Carousel Arrow Positioning */
+.carousel-control-prev {
+  left: -50px !important; /* Move left arrow outside */
+}
+
+.carousel-control-next {
+  right: -50px !important; /* Move right arrow outside */
+}
+
+/* Make the arrows darker so they are visible on a white background */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 20px;
+  background-size: 50% 50%;
+}
+
+/* Ensure the arrows don't disappear on mobile/small screens */
+@media (max-width: 992px) {
+  .carousel-control-prev { left: -20px !important; }
+  .carousel-control-next { right: -20px !important; }
+}
